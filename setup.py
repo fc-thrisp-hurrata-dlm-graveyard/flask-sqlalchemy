@@ -13,18 +13,18 @@ Links
 
 """
 from setuptools import setup
-
+from flask_sqlalchemy import __version__
 
 setup(
     name='Flask-SQLAlchemy',
-    version='0.16',
+    version=__version__,
     url='http://github.com/mitsuhiko/flask-sqlalchemy',
     license='BSD',
     author='Armin Ronacher',
     author_email='armin.ronacher@active-4.com',
     description='Adds SQLAlchemy support to your Flask application',
     long_description=__doc__,
-    py_modules=['flask_sqlalchemy'],
+    packages=['flask_sqlalchemy'],
     zip_safe=False,
     platforms='any',
     install_requires=[
