@@ -652,7 +652,7 @@ class SQLAlchemy(object):
             partial(_SignallingSession, self, **options), scopefunc=scopefunc
         )
 
-    def make_declarative_base(self, base_model):
+    def make_declarative_base(self):
         """Creates the declarative base."""
         base = declarative_base(cls=Model, name="Model",
                                 metaclass=_BoundDeclarativeMeta)
