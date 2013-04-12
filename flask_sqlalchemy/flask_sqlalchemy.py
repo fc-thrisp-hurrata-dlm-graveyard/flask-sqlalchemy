@@ -624,7 +624,7 @@ class SQLAlchemy(object):
         )
 
         self.session = self.create_scoped_session(session_options)
-        self.Model = self.make_declarative_base(base_model)
+        self.Model = self.make_declarative_base()
         self._engine_lock = Lock()
 
         if app is not None:
